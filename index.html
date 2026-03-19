@@ -57,8 +57,108 @@
       </div>
     </header>
 
-    <main class="content"></main>
+    <main class="content">
+      <section class="reservation" id="reservation">
+        <h2 class="reservation__title">Reservar una mesa</h2>
 
-    <footer class="footer"></footer>
+        <form class="form">
+          <fieldset class="form__fieldset">
+            <label class="form__label" for="name">Nombre *</label>
+            <input
+              class="form__input"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre"
+              required
+            />
+
+            <label class="form__label" for="guests"
+              >Número de comensales *</label
+            >
+            <input
+              class="form__input"
+              type="number"
+              id="guests"
+              name="guests"
+              placeholder="1-8"
+              min="1"
+              max="8"
+              required
+            />
+
+            <label class="form__label" for="date">Fecha y hora *</label>
+            <input
+              class="form__input"
+              type="datetime-local"
+              id="date"
+              name="date"
+              required
+            />
+
+            <label class="form__label" for="email"
+              >Tu correo electrónico *</label
+            >
+            <input
+              class="form__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@email.com"
+              required
+            />
+
+            <button class="form__button" type="submit" disabled>
+              Reservar una mesa
+            </button>
+
+            <label class="form__label form__label_type_checkbox">
+              <input class="form__checkbox" type="checkbox" required />
+              Acepto los términos de uso
+            </label>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="footer__circle"></div>
+
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="images/logo_coffeeshop_light.svg" alt="Triple Espresso" />
+        </div>
+
+        <div class="footer__social">
+          <h3 class="footer__social-heading">Redes sociales</h3>
+
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-icon"
+                  src="images/facebook_white.svg"
+                  alt="Facebook"
+                />
+                Facebook
+              </a>
+            </li>
+
+            <li class="footer__list-item">
+              <a href="#" class="footer__social-link">
+                <img
+                  class="footer__social-icon"
+                  src="images/instagram_white.svg"
+                  alt="Instagram"
+                />
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copyright">© 2026 Lina Gonzalez</p>
+    </footer>
   </body>
 </html>
